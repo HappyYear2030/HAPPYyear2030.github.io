@@ -1,2 +1,245 @@
-<head></head>
-<body></body>
+<!doctype html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aussy Prime Meats</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="ita.css" rel="stylesheet" type="text/css">
+<link href="css/form.css" rel="stylesheet" type="text/css">
+<link href="css/slider.css" rel="stylesheet" type="text/css">
+<link href="css/backToTop.css" rel="stylesheet" type="text/css">
+
+<!--navbar ccs & js -->
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/nav.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script type="text/javascript" src="js/1.7.2.jquery.min.js"></script>
+
+<!-- FlexSlider -->
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" >
+    var $ = jQuery.noConflict();
+    $(window).load(function() {
+    $('.flexslider').flexslider({
+          animation: "fade"
+    });
+	
+	$(function() {
+		$('.show_menu').click(function(){
+				$('.menu').fadeIn();
+				$('.show_menu').fadeOut();
+				$('.hide_menu').fadeIn();
+		});
+		$('.hide_menu').click(function(){
+				$('.menu').fadeOut();
+				$('.show_menu').fadeIn();
+				$('.hide_menu').fadeOut();
+		});
+	});
+  });
+</script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <header id="header" class="fluid">
+    <h1 class="fluid headerH1">Aussy Prime Meats</h1>
+  </header>
+  <nav class="clearfix">
+    <ul class="clearfix">
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#aboutUs">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#" id="pull">Menu</a> </nav>
+</div>
+<!--navbar --> 
+
+<!-- Start Image Slider -->
+
+<div class="slider_container">
+  <div class="flexslider">
+    <ul class="slides">
+      <li> <a href="https://www.flickr.com/photos/13522901@N00/12200621"><img src="images/slider1.png" width="1800" alt="sliderimage-1" ></a>
+        <div class="flex-caption">
+          <div class="caption_title_line">
+            <h2>Ensure fresh</h2>
+          </div>
+        </div>
+      </li>
+      <li> <a href="https://www.flickr.com/photos/31790962@N03/18383720039"><img src="images/slider2.png"  width="1800" alt="sliderimage-2" ></a>
+        <div class="flex-caption">
+          <div class="caption_title_line">
+            <h2>High quality</h2>
+          </div>
+        </div>
+      </li>
+      <li> <a href="https://www.flickr.com/photos/186579576@N08/49399224846"><img src="images/slider3.png" width="1800" alt="sliderimage-3" ></a>
+        <div class="flex-caption">
+          <div class="caption_title_line">
+            <h2>Health and Safety</h2>
+          </div>
+        </div>
+      </li>
+      <li> <a href="https://www.flickr.com/photos/158710843@N02/38341716172"><img src="images/slider4.png" width="1800" alt="sliderimage-4" ></a>
+        <div class="flex-caption">
+          <div class="caption_title_line">
+            <h2>Daily transportation</h2>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- End Image Slider  --> 
+<!-- Start contentContainer-->
+
+<div id="contentContainer" class="fluid"> <a id="aboutUs"></a>
+  <div id="feature" class="fluid">
+    <div class="fluid featureImage"> <img src="images/feature-image.png" width="1300" alt="meat feature image"/> 
+      <!--<div class="fluid attribution">
+        <p> <a href="#">Image Attribution</a><br>
+          <a href="#">Copyright</a></p>
+      </div>--> 
+    </div>
+    <!-- End featureImage-->
+    
+    <div class="fluid logo">
+      <h1> About Us</h1>
+      <img src="images/logo.png" alt="logo image"/>
+      <p>Aussy Prime Meats is a wholesale meat supplier. Mainly to meet the daily meat needs of various supermarkets, restaurants and families. It has a supply and distribution line in the city, the purpose is to meet all needs.</p>
+    </div>
+    <!-- End logo --> 
+    
+  </div>
+  <!-- End feature -->
+  
+  <div id="mainProduct" class="fluid"> <img src="images/products.png"  alt="products Image"/> </div>
+  
+  <!-- Start Products-->
+  
+  <div id="colBackGround">
+    <h1>Shop</h1>
+    <a id="shop"></a>
+    <div class="col1"> <img src="images/product1.png"  alt="product1image">
+      <h2>Pork Chops</h2>
+      <a href="https://pixabay.com/zh/photos/pork-pork-chops-cutlet-meat-food-2793585/">pork chops by mp1746</a><br/>
+      <a href="https://pixabay.com/zh/service/license/">Pixabay License</a> </div>
+    <div class="col2"> <img src="images/product2.png"  alt="product2image">
+      <h2>Beef tenderloin</h2>
+      <a href="https://pixabay.com/zh/photos/ox-beef-fillet-of-beef-food-dining-1589863/">beef tenderloin by mp1746</a><br/>
+      <a href="https://pixabay.com/zh/service/license/">Pixabay License</a> </div>
+    <div class="col3"> <img src="images/product3.png"  alt="product3image">
+      <h2>Beef Brisket</h2>
+      <a href="https://pixabay.com/zh/photos/sirloin-ox-beef-roasted-food-1602947/">beef brisket by mp1746</a><br/>
+      <a href="https://pixabay.com/zh/service/license/">Pixabay License</a> </div>
+	<div class="col4"> <img src="images/product4.png"  alt="product4image">
+      <h2>A5 Kobe Beef</h2>
+      <a href="https://search.creativecommons.org/photos/58d09761-878f-41da-abff-1ae2a1a4c54b">A5 kobe beef by allanroy</a><br/>
+      <a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich">CC BY 2.0</a> </div>
+    <div class="col5"> <img src="images/product5.png"  alt="product5image">
+      <h2>NY Strip Steak</h2>
+      <a href="https://www.flickr.com/photos/20688578@N00/2215655020/">steak by BrownGuacamole</a><br/>
+      <a href="https://creativecommons.org/licenses/by-nd/2.0/?ref=ccsearch&atype=rich">CC BY-ND 2.0</a> </div>
+    <div class="col6"> <img src="images/product6.png"  alt="product6image">
+      <h2>Chicken Breast</h2>
+      <a href="https://www.flickr.com/photos/83886716@N00/3577981812">Chicken Breast Fillets by larryjh1234</a><br/>
+      <a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich">CC BY 2.0</a> </div>
+	<div class="col7"> <img src="images/product7.png"  alt="product7image">
+      <h2>Chicken feet</h2>
+      <a href="https://pxhere.com/en/photo/1369224">Chicken feet by Pxhere</a><br/>
+      <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> </div>
+    <div class="col8"> <img src="images/product8.png"  alt="product8image">
+      <h2>Chicken legs</h2>
+      <a href="https://pixabay.com/zh/photos/tree-laurel-bank-leaves-chicken-3796084/">chicken legs by ViktoriyaPavlova</a><br/>
+      <a href="https://pixabay.com/zh/service/license/">Pixabay License</a> </div>
+    <div class="col9"> <img src="images/product9.png"  alt="product9image">
+      <h2>Whole chicken</h2>
+      <a href="https://www.flickr.com/photos/131818906@N07/25169200285">Whole Chicken by notesonhobbies</a><br/>
+      <a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich">CC BY 2.0</a> </div>
+  </div>
+  <!--End Products--> 
+  
+  <!-- Start Video-->
+  
+  <div id="video">
+    <h2>Introducing Us</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/mGp-8QDdNeE" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <!-- End Video -->
+  
+  <div id="contact">
+    <h2>Contact Us</h2>
+    <div class="contactContainer">
+      <input type="text" id="name" name="name" placeholder="Your name..">
+      <input type="text" id="eMail" name="eMail" placeholder="Your eMail Address..">
+      <input type="text" id="number" name="lastname" placeholder="Your Number..">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+      <input type="submit" value="Submit">
+    </div>
+  </div>
+</div>
+
+<!-- End contentContainer-->
+
+<footer id="footer" class="fluid">
+  <p>&copy;2016<script>new Date().getFullYear()>2016&&document.write("-"+new Date().getFullYear());</script>, Taylors College.</p>
+</footer>
+
+<!-- End gridContainer --> 
+
+<!--Begin Javascript for Back to Top --> 
+
+<script type="text/javascript">
+// create the back to top button
+$('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+
+var amountScrolled = 300;
+
+$(window).scroll(function() {
+	if ($(window).scrollTop() > amountScrolled) {
+		$('a.back-to-top').fadeIn('slow');
+	} else {
+		$('a.back-to-top').fadeOut('slow');
+	}
+});
+
+$('a.back-to-top, a.simple-back-to-top').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 'fast');
+	return false;
+});
+</script> 
+<!--End Javascript for Back to Top -->
+</body>
+</html>
